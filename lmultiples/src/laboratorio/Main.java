@@ -22,10 +22,19 @@ public class Main {
         lc.adiFinal(1, "ubic 1", le, lp);
 
         lc.mostrar();
-        
+
         // mayor precio
         mayorprecio(lp);
-        
+
+    }
+
+    public static void ejercicio4(ListaSC a) {
+        NodoC r = a.getP();
+        while (r != null) {
+            System.out.println("Carpa: " + r.getNro());
+            mayorprecio(r.getB());
+            r.getSig();
+        }
     }
 
     public static void mayorprecio(ListaDP a) {

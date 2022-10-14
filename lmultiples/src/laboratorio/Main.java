@@ -1,5 +1,5 @@
 
-package lmultiples;
+package laboratorio;
 
 
 public class Main {

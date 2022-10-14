@@ -6,10 +6,10 @@ public class NodoC {
     private String ubiccacion;
     private ListaSE a;
     private ListaDP b;
-    private NodoC sig;
+    private NodoC ant, sig;
 
-    public NodoC() {
-        sig = null;
+    NodoC() {
+        ant = sig = null;
     }
 
     public int getNro() {
@@ -50,6 +50,14 @@ public class NodoC {
 
     public void setSig(NodoC sig) {
         this.sig = sig;
+    }
+
+    public NodoC getAnt() {
+        return ant;
+    }
+
+    public void setAnt(NodoC ant) {
+        this.ant = ant;
     }
 
 }

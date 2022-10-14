@@ -33,9 +33,9 @@ public class ListaSE {
 
     public void mostrar() {
         NodoE o = getP();
-        System.out.println("LISTA EXPOSITORES :");
+        System.out.println("-- LISTA EXPOSITORES :");
         while (o != null) {
-            System.out.print("<" + o.getNombre() + ">");
+            System.out.println("<" + o.getNombre() + ">");
             o = o.getSig();
         }
     }

@@ -1,10 +1,10 @@
 package laboratorio;
 
-public class ListaDC {
+public class ListaSC {
 
     private NodoC p;
 
-    ListaDC() {
+    ListaSC() {
         p = null;
     }
 
@@ -31,7 +31,6 @@ public class ListaDC {
                 r = r.getSig();
             }
             r.setSig(nue);
-            nue.setAnt(r);
         }
     }
 

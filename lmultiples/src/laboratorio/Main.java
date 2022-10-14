@@ -21,19 +21,33 @@ public class Main {
         ListaSC lc = new ListaSC();
         lc.adiFinal(1, "ubic 1", le, lp);
 
-        lc.mostrar();
+        //lc.mostrar();
 
         // mayor precio
-        mayorprecio(lp);
+        //mayorprecio(lp);
+        
+        ejercicio2(lc, 1);
 
     }
 
+    public static void ejercicio2(ListaSC a, int x) {
+        NodoC r = a.getP();
+        while (r != null) {
+            if(r.getNro() == x) {
+                System.out.println("Carpa: " + r.getNro());   
+                r.getB().mostrar();
+                r.getB();
+            }
+            r = r.getSig();
+        }
+    }
+    
     public static void ejercicio4(ListaSC a) {
         NodoC r = a.getP();
         while (r != null) {
             System.out.println("Carpa: " + r.getNro());
             mayorprecio(r.getB());
-            r.getSig();
+            r = r.getSig();
         }
     }
 

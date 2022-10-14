@@ -22,26 +22,39 @@ public class Main {
         lc.adiFinal(1, "ubic 1", le, lp);
 
         //lc.mostrar();
-
         // mayor precio
         //mayorprecio(lp);
-        
-        ejercicio2(lc, 1);
+        //ejercicio2(lc, 1);
+        ejercicio3(lc, "juan");
 
+    }
+
+    public static void ejercicio3(ListaSC a, String x) {
+        NodoC r = a.getP();
+        while (r != null) {
+            NodoE o = r.getA().getP();
+            while (o != null) {
+                if (o.getNombre().equals(x)) {
+                    System.out.println("Carpa: " + r.getNro());
+                }
+                o = o.getSig();
+            }
+            r = r.getSig();
+        }
     }
 
     public static void ejercicio2(ListaSC a, int x) {
         NodoC r = a.getP();
         while (r != null) {
-            if(r.getNro() == x) {
-                System.out.println("Carpa: " + r.getNro());   
+            if (r.getNro() == x) {
+                System.out.println("Carpa: " + r.getNro());
                 r.getB().mostrar();
                 r.getB();
             }
             r = r.getSig();
         }
     }
-    
+
     public static void ejercicio4(ListaSC a) {
         NodoC r = a.getP();
         while (r != null) {

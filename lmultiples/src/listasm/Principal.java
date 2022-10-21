@@ -16,21 +16,26 @@ public class Principal {
         rm.add(new RangoModelo(0, "r1"));
         rm.add(new RangoModelo(1, "r2"));
 
+        // mostrar 
+        mostrarLinkedList(tv);
+        
+        mostrarArrayList(rm);
+        
     }
 
-    public void mostrarLinkedList(LinkedList<TipoVehiculo> tv) {
+    public static void mostrarLinkedList(LinkedList<TipoVehiculo> tv) {
         ListIterator<TipoVehiculo> e1 = tv.listIterator();
         while (e1.hasNext()) {
             TipoVehiculo elem = e1.next();
-            //elem.mostrar();
+            elem.mostrar();
         }
     }
 
-    public void mostrarArrayList(ArrayList<RangoModelo> rm) {
+    public static void mostrarArrayList(ArrayList<RangoModelo> rm) {
         ListIterator<RangoModelo> e1 = rm.listIterator();
         while (e1.hasNext()) {
             RangoModelo elem = e1.next();
-            //elem.mostrar();
+            elem.mostrar();
         }
     }
 

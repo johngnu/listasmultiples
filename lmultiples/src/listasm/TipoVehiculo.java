@@ -10,6 +10,10 @@ public class TipoVehiculo {
         this.nomTipo = nomTipo;
     }
 
+    public void mostrar() {
+        System.out.println("idRango: " + idTipo + ", nomRango: " + nomTipo);
+    }
+
     public int getIdTipo() {
         return idTipo;
     }

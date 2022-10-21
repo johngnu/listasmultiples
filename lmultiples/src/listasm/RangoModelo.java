@@ -10,6 +10,10 @@ public class RangoModelo {
         this.nomRango = nomRango;
     }
 
+    public void mostrar() {
+        System.out.println("idRango: " + idRango + ", nomRango: " + nomRango);
+    }
+
     public int getIdRango() {
         return idRango;
     }

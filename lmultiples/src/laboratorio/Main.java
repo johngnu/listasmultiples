@@ -26,13 +26,13 @@ public class Main {
         //mayorprecio(lp);
         //ejercicio2(lc, 1);
         ejercicio3(lc, "juan");
-        
+
         ejercicio5("px", 60, 1, lc);
-        
+
         lc.mostrar();
-        
+
     }
-    
+
     public static void ejercicio5(String n, int p, int x, ListaSC a) {
         NodoC r = a.getP();
         while (r != null) {

@@ -5,6 +5,11 @@ public class TipoVehiculo {
     private int idTipo;
     private String nomTipo;
 
+    public TipoVehiculo(int idTipo, String nomTipo) {
+        this.idTipo = idTipo;
+        this.nomTipo = nomTipo;
+    }
+
     public int getIdTipo() {
         return idTipo;
     }

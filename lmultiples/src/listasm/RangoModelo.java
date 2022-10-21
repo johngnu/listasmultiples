@@ -5,6 +5,11 @@ public class RangoModelo {
     private int idRango;
     private String nomRango;
 
+    public RangoModelo(int idRango, String nomRango) {
+        this.idRango = idRango;
+        this.nomRango = nomRango;
+    }
+
     public int getIdRango() {
         return idRango;
     }
